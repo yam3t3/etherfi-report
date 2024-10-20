@@ -1,0 +1,1204 @@
+{
+  "totalPointsSummaries": {
+    "EIGEN_LAYER": {
+      "TotalPoints": 32464.97027789429,
+      "CurrentPoints": 21523.424620866776,
+      "PreviousHistoricalPoints": 10941.545657027513
+    },
+    "LOYALTY": {
+      "TotalPoints": 35257663.73141098,
+      "CurrentPoints": 14490589.080226898,
+      "PreviousHistoricalPoints": 20767074.651184082
+    },
+    "LRT2": {
+      "TotalPoints": 26298.88321352005,
+      "CurrentPoints": 26298.88321352005,
+      "PreviousHistoricalPoints": 0
+    },
+    "SYMBIOTIC": {
+      "TotalPoints": 0.1107180193066597,
+      "CurrentPoints": 0.1107180193066597,
+      "PreviousHistoricalPoints": 0
+    }
+  },
+  "integrationPointsSummaries": {
+    "AAVE_ARBITRUM": {
+      "Integration": "AAVE_ARBITRUM",
+      "EffectiveBalance": 28076643402268983000,
+      "PointsSummary": {
+        "LOYALTY": {
+          "TotalPoints": 160370.234375,
+          "CurrentPoints": 160370.234375,
+          "PreviousHistoricalPoints": 0
+        }
+      }
+    },
+    "AAVE_ARBITRUM_EIGENLAYER": {
+      "Integration": "AAVE_ARBITRUM_EIGENLAYER",
+      "EffectiveBalance": 26879346009723412000,
+      "PointsSummary": {
+        "EIGEN_LAYER": {
+          "TotalPoints": 179.14707946777344,
+          "CurrentPoints": 179.14707946777344,
+          "PreviousHistoricalPoints": 0
+        },
+        "LRT2": {
+          "TotalPoints": 254.1891632080078,
+          "CurrentPoints": 254.1891632080078,
+          "PreviousHistoricalPoints": 0
+        }
+      }
+    },
+    "AAVE_BASE": {
+      "Integration": "AAVE_BASE",
+      "EffectiveBalance": 11103791472670405000,
+      "PointsSummary": {
+        "LOYALTY": {
+          "TotalPoints": 3139246.875,
+          "CurrentPoints": 1642928.5,
+          "PreviousHistoricalPoints": 1496318.375
+        }
+      }
+    },
+    "AAVE_BASE_EIGENLAYER": {
+      "Integration": "AAVE_BASE_EIGENLAYER",
+      "EffectiveBalance": 10710613309166223000,
+      "PointsSummary": {
+        "EIGEN_LAYER": {
+          "TotalPoints": 2926.3797607421875,
+          "CurrentPoints": 2666.241455078125,
+          "PreviousHistoricalPoints": 260.1383056640625
+        },
+        "LRT2": {
+          "TotalPoints": 3269.781494140625,
+          "CurrentPoints": 3269.781494140625,
+          "PreviousHistoricalPoints": 0
+        }
+      }
+    },
+    "AAVE_SCROLL": {
+      "Integration": "AAVE_SCROLL",
+      "EffectiveBalance": 0,
+      "PointsSummary": {
+        "LOYALTY": {
+          "TotalPoints": 1940007.25,
+          "CurrentPoints": 1940007.25,
+          "PreviousHistoricalPoints": 0
+        }
+      }
+    },
+    "AAVE_SCROLL_EIGENLAYER": {
+      "Integration": "AAVE_SCROLL_EIGENLAYER",
+      "EffectiveBalance": 0,
+      "PointsSummary": {
+        "EIGEN_LAYER": {
+          "TotalPoints": 1660.570556640625,
+          "CurrentPoints": 1660.570556640625,
+          "PreviousHistoricalPoints": 0
+        },
+        "LRT2": {
+          "TotalPoints": 2026.9830322265625,
+          "CurrentPoints": 2026.9830322265625,
+          "PreviousHistoricalPoints": 0
+        }
+      }
+    },
+    "CAMELOT_ARBITRUM": {
+      "Integration": "CAMELOT_ARBITRUM",
+      "EffectiveBalance": 18302762322500932000,
+      "PointsSummary": {
+        "EIGEN_LAYER": {
+          "TotalPoints": 519.7508544921875,
+          "CurrentPoints": 519.7508544921875,
+          "PreviousHistoricalPoints": 0
+        },
+        "LOYALTY": {
+          "TotalPoints": 797645.9375,
+          "CurrentPoints": 797645.9375,
+          "PreviousHistoricalPoints": 0
+        },
+        "LRT2": {
+          "TotalPoints": 753.938232421875,
+          "CurrentPoints": 753.938232421875,
+          "PreviousHistoricalPoints": 0
+        }
+      }
+    },
+    "ETHERFAN_NFTS": {
+      "Integration": "ETHERFAN_NFTS",
+      "EffectiveBalance": 0,
+      "PointsSummary": {
+        "EIGEN_LAYER": {
+          "TotalPoints": 0,
+          "CurrentPoints": 0,
+          "PreviousHistoricalPoints": 0
+        },
+        "LOYALTY": {
+          "TotalPoints": 0,
+          "CurrentPoints": 0,
+          "PreviousHistoricalPoints": 0
+        }
+      }
+    },
+    "ETHFI_ARBITRUM": {
+      "Integration": "ETHFI_ARBITRUM",
+      "EffectiveBalance": 149668309667000000000,
+      "PointsSummary": {
+        "LOYALTY": {
+          "TotalPoints": 84154.71875,
+          "CurrentPoints": 29842.43359375,
+          "PreviousHistoricalPoints": 54312.28515625
+        }
+      }
+    },
+    "LORE_SCROLL": {
+      "Integration": "LORE_SCROLL",
+      "EffectiveBalance": 0,
+      "PointsSummary": {
+        "EIGEN_LAYER": {
+          "TotalPoints": 60.306724548339844,
+          "CurrentPoints": 60.306724548339844,
+          "PreviousHistoricalPoints": 0
+        },
+        "LOYALTY": {
+          "TotalPoints": 63936.1953125,
+          "CurrentPoints": 63936.1953125,
+          "PreviousHistoricalPoints": 0
+        },
+        "LRT2": {
+          "TotalPoints": 72.63374328613281,
+          "CurrentPoints": 72.63374328613281,
+          "PreviousHistoricalPoints": 0
+        }
+      }
+    },
+    "MENDI_LINEA": {
+      "Integration": "MENDI_LINEA",
+      "EffectiveBalance": 341348951830150100,
+      "PointsSummary": {
+        "EIGEN_LAYER": {
+          "TotalPoints": 140.07717895507812,
+          "CurrentPoints": 140.07717895507812,
+          "PreviousHistoricalPoints": 0
+        },
+        "LOYALTY": {
+          "TotalPoints": 149902.796875,
+          "CurrentPoints": 149902.796875,
+          "PreviousHistoricalPoints": 0
+        },
+        "LRT2": {
+          "TotalPoints": 173.96412658691406,
+          "CurrentPoints": 173.96412658691406,
+          "PreviousHistoricalPoints": 0
+        }
+      }
+    },
+    "MITOSIS_ARBITRUM": {
+      "Integration": "MITOSIS_ARBITRUM",
+      "EffectiveBalance": 2657000000000000,
+      "PointsSummary": {
+        "EIGEN_LAYER": {
+          "TotalPoints": 3.634705174714327,
+          "CurrentPoints": 3.600980520248413,
+          "PreviousHistoricalPoints": 0.03372465446591377
+        },
+        "LOYALTY": {
+          "TotalPoints": 3644.9390869140625,
+          "CurrentPoints": 1951.421142578125,
+          "PreviousHistoricalPoints": 1693.5179443359375
+        },
+        "LRT2": {
+          "TotalPoints": 4.351010799407959,
+          "CurrentPoints": 4.351010799407959,
+          "PreviousHistoricalPoints": 0
+        }
+      }
+    },
+    "MITOSIS_BLAST": {
+      "Integration": "MITOSIS_BLAST",
+      "EffectiveBalance": 1002142606887135500,
+      "PointsSummary": {
+        "EIGEN_LAYER": {
+          "TotalPoints": 2179.1490478515625,
+          "CurrentPoints": 1358.18408203125,
+          "PreviousHistoricalPoints": 820.9649658203125
+        },
+        "LOYALTY": {
+          "TotalPoints": 2133370.9375,
+          "CurrentPoints": 736018.9375,
+          "PreviousHistoricalPoints": 1397352
+        },
+        "LRT2": {
+          "TotalPoints": 1641.0733642578125,
+          "CurrentPoints": 1641.0733642578125,
+          "PreviousHistoricalPoints": 0
+        }
+      }
+    },
+    "MITOSIS_LINEA": {
+      "Integration": "MITOSIS_LINEA",
+      "EffectiveBalance": 1010000000000000000,
+      "PointsSummary": {
+        "EIGEN_LAYER": {
+          "TotalPoints": 2220.367431640625,
+          "CurrentPoints": 1368.8328857421875,
+          "PreviousHistoricalPoints": 851.5345458984375
+        },
+        "LOYALTY": {
+          "TotalPoints": 2171962.625,
+          "CurrentPoints": 741790,
+          "PreviousHistoricalPoints": 1430172.625
+        },
+        "LRT2": {
+          "TotalPoints": 1653.9404296875,
+          "CurrentPoints": 1653.9404296875,
+          "PreviousHistoricalPoints": 0
+        }
+      }
+    },
+    "MITOSIS_MODE": {
+      "Integration": "MITOSIS_MODE",
+      "EffectiveBalance": 1000000000000000000,
+      "PointsSummary": {
+        "EIGEN_LAYER": {
+          "TotalPoints": 2177.39013671875,
+          "CurrentPoints": 1355.280517578125,
+          "PreviousHistoricalPoints": 822.109619140625
+        },
+        "LOYALTY": {
+          "TotalPoints": 2131880.6875,
+          "CurrentPoints": 734445.3125,
+          "PreviousHistoricalPoints": 1397435.375
+        },
+        "LRT2": {
+          "TotalPoints": 1637.565185546875,
+          "CurrentPoints": 1637.565185546875,
+          "PreviousHistoricalPoints": 0
+        }
+      }
+    },
+    "MITOSIS_SCROLL": {
+      "Integration": "MITOSIS_SCROLL",
+      "EffectiveBalance": 1989329815535207700,
+      "PointsSummary": {
+        "EIGEN_LAYER": {
+          "TotalPoints": 3462.5979614257812,
+          "CurrentPoints": 2639.1884765625,
+          "PreviousHistoricalPoints": 823.4094848632812
+        },
+        "LOYALTY": {
+          "TotalPoints": 3423224.25,
+          "CurrentPoints": 1461054.375,
+          "PreviousHistoricalPoints": 1962169.875
+        },
+        "LRT2": {
+          "TotalPoints": 3193.10595703125,
+          "CurrentPoints": 3193.10595703125,
+          "PreviousHistoricalPoints": 0
+        }
+      }
+    },
+    "NILE_LINEA": {
+      "Integration": "NILE_LINEA",
+      "EffectiveBalance": 3132974756803597300,
+      "PointsSummary": {
+        "EIGEN_LAYER": {
+          "TotalPoints": 1534.1795349121094,
+          "CurrentPoints": 1224.335693359375,
+          "PreviousHistoricalPoints": 309.8438415527344
+        },
+        "LOYALTY": {
+          "TotalPoints": 2287843.25,
+          "CurrentPoints": 1455992,
+          "PreviousHistoricalPoints": 831851.25
+        },
+        "LRT2": {
+          "TotalPoints": 1511.4442138671875,
+          "CurrentPoints": 1511.4442138671875,
+          "PreviousHistoricalPoints": 0
+        }
+      }
+    },
+    "NURI_SCROLL": {
+      "Integration": "NURI_SCROLL",
+      "EffectiveBalance": 510761074624200800,
+      "PointsSummary": {
+        "EIGEN_LAYER": {
+          "TotalPoints": 1769.8144226074219,
+          "CurrentPoints": 1613.44482421875,
+          "PreviousHistoricalPoints": 156.36959838867188
+        },
+        "LOYALTY": {
+          "TotalPoints": 1768956.4375,
+          "CurrentPoints": 1218829.75,
+          "PreviousHistoricalPoints": 550126.6875
+        },
+        "LRT2": {
+          "TotalPoints": 1951.1434326171875,
+          "CurrentPoints": 1951.1434326171875,
+          "PreviousHistoricalPoints": 0
+        }
+      }
+    },
+    "RADIANT_BASE": {
+      "Integration": "RADIANT_BASE",
+      "EffectiveBalance": 13076712110863538000,
+      "PointsSummary": {
+        "LOYALTY": {
+          "TotalPoints": 1351418.75,
+          "CurrentPoints": 1351418.75,
+          "PreviousHistoricalPoints": 0
+        }
+      }
+    },
+    "RADIANT_BASE_EIGENLAYER": {
+      "Integration": "RADIANT_BASE_EIGENLAYER",
+      "EffectiveBalance": 8483155649740385000,
+      "PointsSummary": {
+        "EIGEN_LAYER": {
+          "TotalPoints": 591.535400390625,
+          "CurrentPoints": 591.535400390625,
+          "PreviousHistoricalPoints": 0
+        },
+        "LRT2": {
+          "TotalPoints": 791.0747680664062,
+          "CurrentPoints": 791.0747680664062,
+          "PreviousHistoricalPoints": 0
+        }
+      }
+    },
+    "RHO": {
+      "Integration": "RHO",
+      "EffectiveBalance": 0,
+      "PointsSummary": {
+        "EIGEN_LAYER": {
+          "TotalPoints": 415.8175964355469,
+          "CurrentPoints": 415.8175964355469,
+          "PreviousHistoricalPoints": 0
+        },
+        "LOYALTY": {
+          "TotalPoints": 425076.75,
+          "CurrentPoints": 425076.75,
+          "PreviousHistoricalPoints": 0
+        },
+        "LRT2": {
+          "TotalPoints": 506.85552978515625,
+          "CurrentPoints": 506.85552978515625,
+          "PreviousHistoricalPoints": 0
+        }
+      }
+    },
+    "STELLA_SEP_26_2024": {
+      "Integration": "STELLA_SEP_26_2024",
+      "EffectiveBalance": 0,
+      "PointsSummary": {
+        "EIGEN_LAYER": {
+          "TotalPoints": 51.55691909790039,
+          "CurrentPoints": 51.55691909790039,
+          "PreviousHistoricalPoints": 0
+        },
+        "LOYALTY": {
+          "TotalPoints": 53556.0771484375,
+          "CurrentPoints": 4281.4990234375,
+          "PreviousHistoricalPoints": 49274.578125
+        },
+        "LRT2": {
+          "TotalPoints": 61.852561950683594,
+          "CurrentPoints": 61.852561950683594,
+          "PreviousHistoricalPoints": 0
+        }
+      }
+    },
+    "STURDY": {
+      "Integration": "STURDY",
+      "EffectiveBalance": 0,
+      "PointsSummary": {
+        "EIGEN_LAYER": {
+          "TotalPoints": 216.615966796875,
+          "CurrentPoints": 216.615966796875,
+          "PreviousHistoricalPoints": 0
+        },
+        "LOYALTY": {
+          "TotalPoints": 342037.71875,
+          "CurrentPoints": 342037.71875,
+          "PreviousHistoricalPoints": 0
+        },
+        "LRT2": {
+          "TotalPoints": 264.0723571777344,
+          "CurrentPoints": 264.0723571777344,
+          "PreviousHistoricalPoints": 0
+        }
+      }
+    },
+    "STURDY_LENDING": {
+      "Integration": "STURDY_LENDING",
+      "EffectiveBalance": 34473750622061,
+      "PointsSummary": {
+        "LOYALTY": {
+          "TotalPoints": 2095777.5580863953,
+          "CurrentPoints": 24.058086395263672,
+          "PreviousHistoricalPoints": 2095753.5
+        }
+      }
+    },
+    "WEETHS": {
+      "Integration": "WEETHS",
+      "EffectiveBalance": 175874183612533,
+      "PointsSummary": {
+        "LOYALTY": {
+          "TotalPoints": 252.9277801513672,
+          "CurrentPoints": 193.18907165527344,
+          "PreviousHistoricalPoints": 59.73870849609375
+        },
+        "SYMBIOTIC": {
+          "TotalPoints": 0.1107180193066597,
+          "CurrentPoints": 0.1107180193066597,
+          "PreviousHistoricalPoints": 0
+        }
+      }
+    },
+    "WEETH_ARBITRUM": {
+      "Integration": "WEETH_ARBITRUM",
+      "EffectiveBalance": 0,
+      "PointsSummary": {
+        "EIGEN_LAYER": {
+          "TotalPoints": 187.70796728134155,
+          "CurrentPoints": 3.4783225059509277,
+          "PreviousHistoricalPoints": 184.22964477539062
+        },
+        "LOYALTY": {
+          "TotalPoints": 180414.25274658203,
+          "CurrentPoints": 913.9714965820312,
+          "PreviousHistoricalPoints": 179500.28125
+        },
+        "LRT2": {
+          "TotalPoints": 4.177000999450684,
+          "CurrentPoints": 4.177000999450684,
+          "PreviousHistoricalPoints": 0
+        }
+      }
+    },
+    "WEETH_BASE": {
+      "Integration": "WEETH_BASE",
+      "EffectiveBalance": 600000000000000000,
+      "PointsSummary": {
+        "EIGEN_LAYER": {
+          "TotalPoints": 5142.74365234375,
+          "CurrentPoints": 2395.2265625,
+          "PreviousHistoricalPoints": 2747.51708984375
+        },
+        "LOYALTY": {
+          "TotalPoints": 2582123.5,
+          "CurrentPoints": 364099.75,
+          "PreviousHistoricalPoints": 2218023.75
+        },
+        "LRT2": {
+          "TotalPoints": 2871.0302734375,
+          "CurrentPoints": 2871.0302734375,
+          "PreviousHistoricalPoints": 0
+        }
+      }
+    },
+    "WEETH_LINEA": {
+      "Integration": "WEETH_LINEA",
+      "EffectiveBalance": 96414448844,
+      "PointsSummary": {
+        "EIGEN_LAYER": {
+          "TotalPoints": 4037.76171875,
+          "CurrentPoints": 1967.419677734375,
+          "PreviousHistoricalPoints": 2070.342041015625
+        },
+        "LOYALTY": {
+          "TotalPoints": 2048132.6875,
+          "CurrentPoints": 640097.4375,
+          "PreviousHistoricalPoints": 1408035.25
+        },
+        "LRT2": {
+          "TotalPoints": 2363.7998046875,
+          "CurrentPoints": 2363.7998046875,
+          "PreviousHistoricalPoints": 0
+        }
+      }
+    },
+    "WEETH_MODE": {
+      "Integration": "WEETH_MODE",
+      "EffectiveBalance": 240183054622005950,
+      "PointsSummary": {
+        "EIGEN_LAYER": {
+          "TotalPoints": 1963.4896850585938,
+          "CurrentPoints": 580.0466918945312,
+          "PreviousHistoricalPoints": 1383.4429931640625
+        },
+        "LOYALTY": {
+          "TotalPoints": 942696.578125,
+          "CurrentPoints": 87943.078125,
+          "PreviousHistoricalPoints": 854753.5
+        },
+        "LRT2": {
+          "TotalPoints": 685.8212280273438,
+          "CurrentPoints": 685.8212280273438,
+          "PreviousHistoricalPoints": 0
+        }
+      }
+    },
+    "WEETH_SCROLL": {
+      "Integration": "WEETH_SCROLL",
+      "EffectiveBalance": 262788366717,
+      "PointsSummary": {
+        "EIGEN_LAYER": {
+          "TotalPoints": 1024.3759765625,
+          "CurrentPoints": 512.7661743164062,
+          "PreviousHistoricalPoints": 511.60980224609375
+        },
+        "LOYALTY": {
+          "TotalPoints": 487213.296875,
+          "CurrentPoints": 80616.734375,
+          "PreviousHistoricalPoints": 406596.5625
+        },
+        "LRT2": {
+          "TotalPoints": 606.0863037109375,
+          "CurrentPoints": 606.0863037109375,
+          "PreviousHistoricalPoints": 0
+        }
+      }
+    }
+  },
+  "referralPointsSummary": {
+    "TotalPoints": 0,
+    "CurrentPoints": 0,
+    "PreviousHistoricalPoints": 0
+  },
+  "referrals": [],
+  "badgePointsSummary": {
+    "TotalPoints": 4492816.5,
+    "CurrentPoints": 0,
+    "PreviousHistoricalPoints": 4433645.5
+  },
+  "badges": [
+    {
+      "ID": "wizard-holder",
+      "Name": "Wizard Holder",
+      "Description": "Unlocked by minting/buying a Wizard ether.fan which is 1 of 1000, and the most rare of the ether.fan NFTs, for every tier in your Wizard, you unlock more points in this badge, 5k/10k/25k/50k per tier",
+      "Season": 1,
+      "Category": "ether.fan",
+      "SubText": "0 points",
+      "SubTextLine2": "(max: 50k)",
+      "Acquired": false,
+      "Progress": 0,
+      "Extra": "",
+      "Points": 0
+    },
+    {
+      "ID": "squid-holder",
+      "Name": "Squid Holder",
+      "Description": "Unlocked by minting/buying a Squid ether.fan which is 1 of 2000, and the second most rare of the ether.fan NFTs, for every tier in your Squid, you unlock more points in this badge, 2.5k/5k/10k/25k per tier",
+      "Season": 1,
+      "Category": "ether.fan",
+      "SubText": "0 points",
+      "SubTextLine2": "(max: 25k)",
+      "Acquired": false,
+      "Progress": 0,
+      "Extra": "",
+      "Points": 0
+    },
+    {
+      "ID": "robot-holder",
+      "Name": "Robot Holder",
+      "Description": "Unlocked by minting/buying a Robot ether.fan which is 1 of 7000, and the final unlockable ether.fan, for every tier in your Robot, you unlock more points in this badge, 1.25k/2.5k/5k/10k per tier",
+      "Season": 1,
+      "Category": "ether.fan",
+      "SubText": "0 points",
+      "SubTextLine2": "(max: 10k)",
+      "Acquired": false,
+      "Progress": 0,
+      "Extra": "",
+      "Points": 0
+    },
+    {
+      "ID": "true-believer",
+      "Name": "True Believer",
+      "Description": "Unlocked by collecting all 3 types of ether.fans, the wizard, the squid and the robot, you are the true ETHER.FAN!",
+      "Season": 1,
+      "Category": "ether.fan",
+      "SubText": "0 points",
+      "SubTextLine2": "(max: 30k)",
+      "Acquired": false,
+      "Progress": 0,
+      "Extra": "",
+      "Points": 0
+    },
+    {
+      "ID": "wizard-sticker",
+      "Name": "Wizard Sticker",
+      "Description": "Holders of wizard fans can unlock this by finding a limited edition holographic Wizard sticker at an ether.fi event. Once you shake our hand, prove you hold the fan in your wallet, we can give you the sticker and we will issue the badge to your wallet!",
+      "Season": 1,
+      "Category": "ether.fan",
+      "SubText": "0 points",
+      "SubTextLine2": "(max: 100k)",
+      "Acquired": false,
+      "Progress": 0,
+      "Extra": "",
+      "Points": 0
+    },
+    {
+      "ID": "squid-sticker",
+      "Name": "Squid Sticker",
+      "Description": "Holders of Squid fans can unlock this by finding a limited edition holographic Squid sticker at an ether.fi event. Once you shake our hand, prove you hold the fan in your wallet, we can give you the sticker and we will issue the badge to your wallet!",
+      "Season": 1,
+      "Category": "ether.fan",
+      "SubText": "0 points",
+      "SubTextLine2": "(max: 100k)",
+      "Acquired": false,
+      "Progress": 0,
+      "Extra": "",
+      "Points": 0
+    },
+    {
+      "ID": "robot-sticker",
+      "Name": "Robot Sticker",
+      "Description": "Holders of Robot fans can unlock this by finding a limited edition holographic Robot sticker at an ether.fi event. Once you shake our hand, prove you hold the fan in your wallet, we can give you the sticker and we will issue the badge to your wallet!",
+      "Season": 1,
+      "Category": "ether.fan",
+      "SubText": "0 points",
+      "SubTextLine2": "(max: 100k)",
+      "Acquired": false,
+      "Progress": 0,
+      "Extra": "",
+      "Points": 0
+    },
+    {
+      "ID": "binary-box",
+      "Name": "Binary Box",
+      "Description": "Unlocked by ..? Find out later in 2024",
+      "Season": 1,
+      "Category": "ether.fan",
+      "SubText": "0 points",
+      "SubTextLine2": "(max: 1M)",
+      "Acquired": false,
+      "Progress": 0,
+      "Extra": "",
+      "Points": 0
+    },
+    {
+      "ID": "devamp",
+      "Name": "Devamp",
+      "Description": "Turn your restaked or non-restaked cbETH or stETH into eETH, each hour unlocks a percentage of the badge, after holding eETH to the amount of the full liquified amount for 24 hours, you unlock the full badge",
+      "Season": 1,
+      "Category": "Special Event",
+      "SubText": "0 points",
+      "SubTextLine2": "(max: 1M)",
+      "Acquired": false,
+      "Progress": 0,
+      "Extra": "",
+      "Points": 0
+    },
+    {
+      "ID": "mega-minter",
+      "Name": "Mega Minter",
+      "Description": "For every 1 ETH deposited during Mega Week, you will receive 100 EigenLayer points, points are awarded at the end of the week! Only first 20k ETH will be rewarded. Anyone abusing this will be disqualified and lose all their points. 100 loyalty points are also awarded for every 1 EigenLayer point earned.",
+      "Season": 1,
+      "Category": "Special Event",
+      "SubText": "0 points",
+      "SubTextLine2": "(max: 1M)",
+      "Acquired": false,
+      "Progress": 0,
+      "Extra": "0",
+      "Points": 0
+    },
+    {
+      "ID": "mega-legacy",
+      "Name": "Mega Legacy",
+      "Description": "Mega week has arrived! 1 million extra EigenLayer points is being distributed to current depositors and 2x loyalty points for all holders of eETH!",
+      "Season": 1,
+      "Category": "Special Event",
+      "SubText": "0 points",
+      "SubTextLine2": "(max: 1M)",
+      "Acquired": false,
+      "Progress": 0,
+      "Extra": "0",
+      "Points": 0
+    },
+    {
+      "ID": "santas-helper",
+      "Name": "Santa's Helper",
+      "Description": "Top 10 #sassalsanta contestant on Twitter/X during the 2023 Festive season!",
+      "Season": 1,
+      "Category": "Special Event",
+      "SubText": "0 points",
+      "SubTextLine2": "(max: 30k)",
+      "Acquired": false,
+      "Progress": 0,
+      "Extra": "",
+      "Points": 0
+    },
+    {
+      "ID": "debanked",
+      "Name": "Debanked",
+      "Description": "Followed us on Debank before the end of Jan '24.",
+      "Season": 1,
+      "Category": "Special Event",
+      "SubText": "1K points",
+      "SubTextLine2": "(max: 1k)",
+      "Acquired": true,
+      "Progress": 0,
+      "Extra": "",
+      "Points": 1000
+    },
+    {
+      "ID": "100k",
+      "Name": "100k",
+      "Description": "The journey to 100k ETH staked. Stake now before this protocol milestone to be eligible & play your part in decentralizing ethereum.",
+      "Season": 1,
+      "Category": "Special Event",
+      "SubText": "0 points",
+      "SubTextLine2": "(max: 100k)",
+      "Acquired": false,
+      "Progress": 0,
+      "Extra": "",
+      "Points": 0
+    },
+    {
+      "ID": "final-countdown",
+      "Name": "Final Countdown",
+      "Description": "50% of the Final Countdown community allocation top up will be distributed to everyone who staked eETH between March 4th '24 - March 15th '24. The other 50% will be distributed to all existing eETH stakers via the \"Maiden Voyage\" badge. This is a 1 point badge and influences bonus allocation.",
+      "Season": 1,
+      "Category": "Special Event",
+      "SubText": "0 points",
+      "SubTextLine2": "(max: 1)",
+      "Acquired": false,
+      "Progress": 0,
+      "Extra": "",
+      "Points": 0
+    },
+    {
+      "ID": "maiden-voyage",
+      "Name": "Maiden Voyage",
+      "Description": "Unlock by holding your eETH from now to March 4th '24, works in tandem with Final Countdown badge, unlocked on March 5th.",
+      "Season": 1,
+      "Category": "ether.fi Luminary",
+      "SubText": "0 points",
+      "SubTextLine2": "(max: 10k)",
+      "Acquired": false,
+      "Progress": 0,
+      "Extra": "",
+      "Points": 0
+    },
+    {
+      "ID": "crypto-chronomancer",
+      "Name": "Crypto Chronomancer",
+      "Description": "Awarded to users who predicted the correct date on amount of ETH staked at a certain milestone",
+      "Season": 1,
+      "Category": "ether.fi Luminary",
+      "SubText": "0 points",
+      "SubTextLine2": "(max: 0)",
+      "Acquired": false,
+      "Progress": 0,
+      "Extra": "",
+      "Points": 0
+    },
+    {
+      "ID": "still-early",
+      "Name": "Still Early",
+      "Description": "Unlocked by ..?",
+      "Season": 1,
+      "Category": "ether.fi Luminary",
+      "SubText": "0 points",
+      "SubTextLine2": "(max: 0)",
+      "Acquired": false,
+      "Progress": 0,
+      "Extra": "",
+      "Points": 0
+    },
+    {
+      "ID": "ambassador",
+      "Name": "Ambassador",
+      "Description": "You are a trusted member of the ether.fi & ether.fan discord community",
+      "Season": 1,
+      "Category": "ether.fi Community",
+      "SubText": "0 points",
+      "SubTextLine2": "(max: 25k)",
+      "Acquired": false,
+      "Progress": 0,
+      "Extra": "",
+      "Points": 0
+    },
+    {
+      "ID": "dc-chad",
+      "Name": "DC Chad",
+      "Description": "You say the darnest things on Discord and the ether.fi team appreciates you!",
+      "Season": 1,
+      "Category": "ether.fi Community",
+      "SubText": "0 points",
+      "SubTextLine2": "(max: 25k)",
+      "Acquired": false,
+      "Progress": 0,
+      "Extra": "",
+      "Points": 0
+    },
+    {
+      "ID": "community-alpha",
+      "Name": "Community Alpha",
+      "Description": "Unlocked by community partnerships!",
+      "Season": 1,
+      "Category": "ether.fi Community",
+      "SubText": "0 points",
+      "SubTextLine2": "(max: 40k)",
+      "Acquired": false,
+      "Progress": 0,
+      "Extra": "",
+      "Points": 0
+    },
+    {
+      "ID": "community-pillar",
+      "Name": "Community Pillar",
+      "Description": "Unlocked by attending a community call! Variable badge, 3k points per call.",
+      "Season": 1,
+      "Category": "ether.fi Community",
+      "SubText": "0 points",
+      "SubTextLine2": "(max: 30k)",
+      "Acquired": false,
+      "Progress": 0,
+      "Extra": "",
+      "Points": 0
+    },
+    {
+      "ID": "beta-tester",
+      "Name": "Beta Tester",
+      "Description": "You help the ether.fi team test new features and new frontiers, thank you.",
+      "Season": 1,
+      "Category": "ether.fi Community",
+      "SubText": "0 points",
+      "SubTextLine2": "(max: 50k)",
+      "Acquired": false,
+      "Progress": 0,
+      "Extra": "",
+      "Points": 0
+    },
+    {
+      "ID": "sentinel",
+      "Name": "Sentinel",
+      "Description": "Unlocked by protecting the people, the protocol and the points!",
+      "Season": 1,
+      "Category": "ether.fi Community",
+      "SubText": "0 points",
+      "SubTextLine2": "(max: 40k)",
+      "Acquired": false,
+      "Progress": 0,
+      "Extra": "",
+      "Points": 0
+    },
+    {
+      "ID": "pendle-pro",
+      "Name": "Pendle Pro",
+      "Description": "Unlocked by proving you are a Pendle pro!",
+      "Season": 1,
+      "Category": "ether.fi Community",
+      "SubText": "0 points",
+      "SubTextLine2": "(max: 100k)",
+      "Acquired": false,
+      "Progress": 0,
+      "Extra": "",
+      "Points": 0
+    },
+    {
+      "ID": "points-pro",
+      "Name": "Points Pro",
+      "Description": "Unlocked by proving you are a points pro!",
+      "Season": 1,
+      "Category": "ether.fi Community",
+      "SubText": "0 points",
+      "SubTextLine2": "(max: 100k)",
+      "Acquired": false,
+      "Progress": 0,
+      "Extra": "",
+      "Points": 0
+    },
+    {
+      "ID": "youve-got-mail",
+      "Name": "You've Got Mail",
+      "Description": "You verified your email address",
+      "Season": 2,
+      "Category": "ether.fi Luminary",
+      "SubText": "0 points",
+      "SubTextLine2": "(max: 5k)",
+      "Acquired": false,
+      "Progress": 0,
+      "Extra": "",
+      "Points": 0
+    },
+    {
+      "ID": "s1-participant",
+      "Name": "S1 Participant",
+      "Description": "You were a participant in the first season of ether.fi. Thanks for being a part of the community!",
+      "Season": 2,
+      "Category": "ether.fi Luminary",
+      "SubText": "0 points",
+      "SubTextLine2": "(max: 100k)",
+      "Acquired": false,
+      "Progress": 0,
+      "Extra": "",
+      "Points": 0
+    },
+    {
+      "ID": "delegator",
+      "Name": "Delegator",
+      "Description": "Participating in governance can take a serious commitment, start slowly by entrusting your voting power to a delegate!",
+      "Season": 2,
+      "Category": "ether.fi Luminary",
+      "SubText": "0 points",
+      "SubTextLine2": "(max: 200k)",
+      "Acquired": false,
+      "Progress": 0,
+      "Extra": "",
+      "Points": 0
+    },
+    {
+      "ID": "staking-frens-polyhedra",
+      "Name": "Staking Frens",
+      "Description": "Stake during the Staking Frens Polyhedra event.",
+      "Season": 2,
+      "Category": "Events",
+      "SubText": "Event has ended",
+      "SubTextLine2": "",
+      "Acquired": false,
+      "Progress": 0,
+      "Extra": "",
+      "Points": 0
+    },
+    {
+      "ID": "staking-frens-omni",
+      "Name": "Staking Frens",
+      "Description": "Stake during the Staking Frens Omni event.",
+      "Season": 2,
+      "Category": "Events",
+      "SubText": "Event has ended",
+      "SubTextLine2": "",
+      "Acquired": false,
+      "Progress": 0,
+      "Extra": "",
+      "Points": 0
+    },
+    {
+      "ID": "staking-frens-gearbox",
+      "Name": "Staking Frens",
+      "Description": "Stake during the Staking Frens Gearbox event.",
+      "Season": 2,
+      "Category": "Events",
+      "SubText": "Event has ended",
+      "SubTextLine2": "",
+      "Acquired": false,
+      "Progress": 0,
+      "Extra": "",
+      "Points": 0
+    },
+    {
+      "ID": "staking-frens-ondo",
+      "Name": "Staking Frens",
+      "Description": "Stake during the Staking Frens Ondo event.",
+      "Season": 2,
+      "Category": "Events",
+      "SubText": "Event has ended",
+      "SubTextLine2": "",
+      "Acquired": false,
+      "Progress": 0,
+      "Extra": "",
+      "Points": 0
+    },
+    {
+      "ID": "staking-frens-ethena",
+      "Name": "Staking Frens",
+      "Description": "Deposit into the Liquid USD vault during the Staking Frens Ethena event.",
+      "Season": 2,
+      "Category": "Events",
+      "SubText": "Event has ended",
+      "SubTextLine2": "",
+      "Acquired": false,
+      "Progress": 0,
+      "Extra": "",
+      "Points": 0
+    },
+    {
+      "ID": "staking-frens-mystery-box-1",
+      "Name": "Staking Frens",
+      "Description": "Stake during the Staking Frens Mystery Box #1 event.",
+      "Season": 2,
+      "Category": "Events",
+      "SubText": "Event has ended",
+      "SubTextLine2": "",
+      "Acquired": false,
+      "Progress": 0,
+      "Extra": "",
+      "Points": 0
+    },
+    {
+      "ID": "staking-frens-mystery-box-2",
+      "Name": "Staking Frens",
+      "Description": "Stake during the Staking Frens Mystery Box #2 event.",
+      "Season": 2,
+      "Category": "Events",
+      "SubText": "Event has ended",
+      "SubTextLine2": "",
+      "Acquired": false,
+      "Progress": 0,
+      "Extra": "",
+      "Points": 0
+    },
+    {
+      "ID": "galxe-quest",
+      "Name": "Galxe Quest",
+      "Description": "Earned by engaging with ether.fi on Galxe.",
+      "Season": 2,
+      "Category": "ether.fi Community",
+      "SubText": "5K points",
+      "SubTextLine2": "(max: 5k)",
+      "Acquired": true,
+      "Progress": 0,
+      "Extra": "",
+      "Points": 5000
+    },
+    {
+      "ID": "daily-collector",
+      "Name": "Daily Collector",
+      "Description": "Click the daily button on your dashboard to earn loyalty points. Each consecutive day you click, the points increase, up to a maximum. Miss a day, and the points reset to the starting amount.",
+      "Season": 3,
+      "Category": "Community Badges",
+      "SubText": "",
+      "SubTextLine2": "",
+      "Acquired": false,
+      "Progress": 0,
+      "Extra": "",
+      "Points": 0
+    },
+    {
+      "ID": "refer-a-fren",
+      "Name": "Refer-A-Fren",
+      "Description": "10000pts/0.1ETH",
+      "Season": 3,
+      "Category": "Community Badges",
+      "SubText": "Refer to Activate",
+      "SubTextLine2": "10000pts/0.1ETH",
+      "Acquired": false,
+      "Progress": 0,
+      "Extra": "",
+      "Points": 0
+    },
+    {
+      "ID": "beta-tester-s3",
+      "Name": "Beta Tester",
+      "Description": "You help the ether.fi team test new features and new frontiers, thank you!",
+      "Season": 3,
+      "Category": "Community Badges",
+      "SubText": "0 points",
+      "SubTextLine2": "(max: 500k)",
+      "Acquired": false,
+      "Progress": 0,
+      "Extra": "",
+      "Points": 0
+    },
+    {
+      "ID": "sentinel-s3",
+      "Name": "Sentinel",
+      "Description": "Unlocked by protecting the people, the protocol and the points! Variable badge, 500K points per instance",
+      "Season": 3,
+      "Category": "Community Badges",
+      "SubText": "0 points",
+      "SubTextLine2": "(max: 2.5M)",
+      "Acquired": false,
+      "Progress": 0,
+      "Extra": "",
+      "Points": 0
+    },
+    {
+      "ID": "best-in-social",
+      "Name": "Best in Social",
+      "Description": "You've shared award-winning content for others. Join our Discord community for weekly challenges. Variable badge, 2.5M points per instance",
+      "Season": 3,
+      "Category": "Community Badges",
+      "SubText": "0 points",
+      "SubTextLine2": "(max: 10M)",
+      "Acquired": false,
+      "Progress": 0,
+      "Extra": "",
+      "Points": 0
+    },
+    {
+      "ID": "ama-big-wheel",
+      "Name": "AMA Big Wheel",
+      "Description": "Join our weekly AMA's and spin that wheel!",
+      "Season": 3,
+      "Category": "Community Badges",
+      "SubText": "0 points",
+      "SubTextLine2": "(max: 500k)",
+      "Acquired": false,
+      "Progress": 0,
+      "Extra": "",
+      "Points": 0
+    },
+    {
+      "ID": "king-karak-lrt-perks",
+      "Name": "King Karak LRT",
+      "Description": "Deposit in the King Karak vault to earn ETHFI rewards.",
+      "Season": 3,
+      "Category": "Events",
+      "SubText": "Event has ended",
+      "SubTextLine2": "",
+      "Acquired": false,
+      "Progress": 0,
+      "Extra": "",
+      "Points": 0
+    },
+    {
+      "ID": "nexo-perks",
+      "Name": "Nexo Perks",
+      "Description": "Staked during the Nexo Perks event.",
+      "Season": 3,
+      "Category": "Events",
+      "SubText": "Event has ended",
+      "SubTextLine2": "",
+      "Acquired": false,
+      "Progress": 0,
+      "Extra": "",
+      "Points": 0
+    },
+    {
+      "ID": "s1-participant-s3",
+      "Name": "S1 Participant",
+      "Description": "Staked and earned points in Season 1",
+      "Season": 3,
+      "Category": "Community Badges",
+      "SubText": "Inactive",
+      "SubTextLine2": "(max: 0.5x)",
+      "Acquired": false,
+      "Progress": 0,
+      "Extra": "",
+      "Points": 0
+    },
+    {
+      "ID": "s2-participant-s3",
+      "Name": "S2 Participant",
+      "Description": "Staked and earned points in Season 2",
+      "Season": 3,
+      "Category": "Community Badges",
+      "SubText": "4.43M points",
+      "SubTextLine2": "0.25x multiplier",
+      "Acquired": true,
+      "Progress": 0,
+      "Extra": "",
+      "Points": 4427645.5
+    }
+  ],
+  "nftPointsSummary": {
+    "TotalPoints": 0,
+    "CurrentPoints": 0,
+    "PreviousHistoricalPoints": 0
+  },
+  "dailyStreak": {
+    "acquired": true,
+    "cooldownActive": true,
+    "cooldownTime": "2024-10-20T08:25:25.319Z",
+    "dailyStreak": 20,
+    "nextCheckinPoints": 8888,
+    "points": 205887,
+    "disabled": false
+  }
+}

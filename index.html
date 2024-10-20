@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ether.fi Portfolio Report</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <style>
+        /* Custom styles can be added here */
+    </style>
+</head>
+<body class="bg-gray-100 font-sans text-gray-800">
+    <div class="container mx-auto my-10 p-8 bg-white shadow-lg rounded-lg">
+        <!-- New Section for Input -->
+        <section class="mb-6">
+            <div class="flex justify-between items-center">
+                <h1 class="text-center text-3xl font-bold text-gray-800 border-b-4 border-blue-500 pb-2 mb-4">Ether.fi Portfolio Report</h1>
+                <input type="text" id="json-address" class="form-control w-1/2 p-2 border rounded" placeholder="Enter Address" value="0x9e47FBb2a2A27B3b02E4a63b3eF5A3dC863c0223" onkeypress="if(event.key === 'Enter') fetchData()">
+            </div>
+        </section>
+
+        <div id="error-container" class="text-red-600 font-bold mt-6 p-4 bg-red-100 rounded hidden"></div>
+
+        <!-- Report Sections -->
+        <section class="grid grid-cols-3 gap-4">
+            <section id="total-points-summary" class="col-span-2">
+                <h2 class="text-2xl font-bold text-gray-800 mt-10 mb-6">Total Points Summary</h2>
+                <div class="overflow-x-auto">
+                    <table class="min-w-full bg-white shadow-md rounded-lg">
+                        <thead>
+                            <tr class="bg-blue-500 text-white uppercase text-xs">
+                                <th class="py-2 px-4">Category</th>
+                                <th class="py-2 px-4 text-right">Total Points</th>
+                                <th class="py-2 px-4 text-right">Current Points</th>
+                                <th class="py-2 px-4 text-right">Previous Historical Points</th>
+                            </tr>
+                        </thead>
+                        <tbody id="total-points-summary-body">
+                            <!-- Data will be inserted here -->
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <section id="daily-streak" class="col-span-1">
+                <h2 class="text-2xl font-bold text-gray-800 mt-10 mb-6">Daily Streak</h2>
+                <div id="daily-streak-info" class="bg-gray-200 p-6 rounded-lg shadow-md">
+                    <!-- Data will be inserted here -->
+                </div>
+            </section>
+        </section>
+
+        <section id="integration-points-summary">
+            <h2 class="text-2xl font-bold text-gray-800 mt-10 mb-6">Integration Points Summary</h2>
+            <div class="overflow-x-auto">
+                <table class="min-w-full bg-white shadow-md rounded-lg">
+                    <thead>
+                        <tr class="bg-blue-500 text-white uppercase text-xs">
+                            <th class="py-2 px-4">Integration</th>
+                            <th class="py-2 px-4 text-right">Effective Balance</th>
+                            <th class="py-2 px-4 text-right">LOYALTY</th>
+                            <th class="py-2 px-4 text-right">EIGEN_LAYER</th>
+                            <th class="py-2 px-4 text-right">LRT2</th>
+                        </tr>
+                    </thead>
+                    <tbody id="integration-points-summary-body">
+                        <!-- Data will be inserted here -->
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section id="badges">
+            <h2 class="text-2xl font-bold text-gray-800 mt-10 mb-6">Badges</h2>
+            <div class="overflow-x-auto">
+                <table class="min-w-full bg-white shadow-md rounded-lg">
+                    <thead>
+                        <tr class="bg-blue-500 text-white uppercase text-xs">
+                            <th class="py-2 px-4">Name</th>
+                            <th class="py-2 px-4">Description</th>
+                            <th class="py-2 px-4">Category</th>
+                            <th class="py-2 px-4 text-right">Points</th>
+                            <th class="py-2 px-4">Status</th>
+                        </tr>
+                    </thead>
+                    <tbody id="badges-body">
+                        <!-- Data will be inserted here -->
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        // Base URL for the API
+        const baseUrl = 'https://corsproxy.io/?https://app.ether.fi/api/portfolio/v3/';
+
+        // Function to format numbers with commas, decimal places, and optional prefix
+        function formatNumber(num, decimalPlaces = 2, prefix = '') {
+            if (num === undefined || num === null) return '-';
+            num = typeof num === 'string' ? parseFloat(num) : num;
+            if (num >= 1e12) {
+                return formatLargeNumber(num);
+            }
+            const formattedNum = num.toLocaleString('en-US', {
+                minimumFractionDigits: decimalPlaces,
+                maximumFractionDigits: decimalPlaces
+            });
+            return `<span class="number">${prefix}${formattedNum}</span>`;
+        }
+
+        // Function to format large numbers (trillions and above)
+        function formatLargeNumber(num) {
+            const trillion = 1e12;
+            const billion = 1e9;
+            const million = 1e6;
+            if (num >= trillion) {
+                return `<span class="number">${(num / trillion).toFixed(6)} T</span>`;
+            } else if (num >= billion) {
+                return `<span class="number">${(num / billion).toFixed(6)} B</span>`;
+            } else if (num >= million) {
+                return `<span class="number">${(num / million).toFixed(6)} M</span>`;
+            }
+        }
+
+        // Function to format effective balance
+        function formatEffectiveBalance(num) {
+            if (num === undefined || num === null) return '-';
+            num = typeof num === 'string' ? parseFloat(num) : num;
+            return (num / 1e6).toFixed(4); // Divide by 1,000,000 and format to 4 decimal places
+        }
+
+        // Function to fetch data from the API and update the tables
+        async function fetchData() {
+            const address = document.getElementById('json-address').value;
+            const url = `${baseUrl}${address}`;
+            
+            // Validate address format
+            if (!isValidAddress(address)) {
+                document.getElementById('error-container').innerHTML = 'Invalid address format. Please enter a valid address.';
+                document.getElementById('error-container').classList.remove('hidden'); // Show error container
+                document.getElementById('error-container').classList.remove('bg-green-100'); // Remove success background
+                document.getElementById('error-container').classList.add('bg-red-100'); // Add error background
+                return;
+            }
+
+            try {
+                const response = await axios.get(url);
+                const data = response.data;
+
+                // Show success message
+                document.getElementById('error-container').classList.remove('hidden'); // Ensure it's visible
+                document.getElementById('error-container').classList.remove('bg-red-100'); // Remove error background
+                document.getElementById('error-container').classList.add('bg-green-100'); // Add success background
+                document.getElementById('error-container').classList.remove('text-red-600'); // Remove error text color
+                document.getElementById('error-container').classList.add('text-green-600'); // Add success text color
+                document.getElementById('error-container').innerHTML = 'Data fetched successfully!'; // Success message
+
+                updateTotalPointsSummary(data.totalPointsSummaries);
+                updateIntegrationPointsSummary(data.integrationPointsSummaries);
+                updateBadges(data.badges);
+                updateDailyStreak(data.dailyStreak);
+            } catch (error) {
+                console.error('Error fetching the data:', error); // Log the error
+                document.getElementById('error-container').innerHTML = `Error fetching data: ${error.message}. Please try again later.`;
+                document.getElementById('error-container').classList.remove('hidden'); // Show error container
+                document.getElementById('error-container').classList.remove('bg-green-100'); // Remove success background
+                document.getElementById('error-container').classList.add('bg-red-100'); // Add error background
+                document.getElementById('error-container').classList.add('text-red-600'); // Ensure error text color
+                document.getElementById('error-container').classList.remove('text-green-600'); // Remove success text color
+            }
+        }
+
+        function isValidAddress(address) {
+            return /^0x[a-fA-F0-9]{40}$/.test(address); // Example regex for Ethereum addresses
+        }
+
+        // Event listener for the fetch button
+        // Removed the button, so no event listener needed
+
+        function updateTotalPointsSummary(summaries) {
+            const tbody = document.getElementById('total-points-summary-body');
+            tbody.innerHTML = '';
+            for (const [category, points] of Object.entries(summaries)) {
+                const row = `
+                    <tr class="border-b">
+                        <td class="py-2 px-4">${category}</td>
+                        <td class="py-2 px-4 text-right">${formatNumber(points.TotalPoints)}</td>
+                        <td class="py-2 px-4 text-right">${formatNumber(points.CurrentPoints)}</td>
+                        <td class="py-2 px-4 text-right">${formatNumber(points.PreviousHistoricalPoints)}</td>
+                    </tr>
+                `;
+                tbody.insertAdjacentHTML('beforeend', row);
+            }
+        }
+
+        function updateIntegrationPointsSummary(summaries) {
+            const tbody = document.getElementById('integration-points-summary-body');
+            tbody.innerHTML = '';
+
+            // Sort summaries by LOYALTY points in descending order
+            const sortedSummaries = Object.entries(summaries).sort(([, a], [, b]) => {
+                const aLoyaltyPoints = a.PointsSummary.LOYALTY ? a.PointsSummary.LOYALTY.TotalPoints : 0; // Handle undefined values
+                const bLoyaltyPoints = b.PointsSummary.LOYALTY ? b.PointsSummary.LOYALTY.TotalPoints : 0; // Handle undefined values
+                return bLoyaltyPoints - aLoyaltyPoints; // Sort in descending order
+            });
+
+            for (const [integration, data] of sortedSummaries) {
+                const loyaltyPoints = data.PointsSummary.LOYALTY ? data.PointsSummary.LOYALTY.TotalPoints : 0;
+                const eigenLayerPoints = data.PointsSummary.EIGEN_LAYER ? data.PointsSummary.EIGEN_LAYER.TotalPoints : 0;
+                const lrt2Points = data.PointsSummary.LRT2 ? data.PointsSummary.LRT2.TotalPoints : 0;
+
+                const row = `
+                    <tr class="border-b">
+                        <td class="py-2 px-4" data-sort-value="${integration}">${integration}</td>
+                        <td class="py-2 px-4 text-right" data-sort-value="${data.EffectiveBalance}">${formatEffectiveBalance(data.EffectiveBalance)}</td>
+                        <td class="py-2 px-4 text-right" data-sort-value="${loyaltyPoints}">${formatNumber(loyaltyPoints)}</td>
+                        <td class="py-2 px-4 text-right" data-sort-value="${eigenLayerPoints}">${formatNumber(eigenLayerPoints)}</td>
+                        <td class="py-2 px-4 text-right" data-sort-value="${lrt2Points}">${formatNumber(lrt2Points)}</td>
+                    </tr>
+                `;
+                tbody.insertAdjacentHTML('beforeend', row);
+            }
+            
+            // Initialize sorting for the table
+            initializeSort();
+        }
+
+        function updateBadges(badges) {
+            const tbody = document.getElementById('badges-body');
+            tbody.innerHTML = '';
+            // Sort badges by points in descending order
+            badges.sort((a, b) => b.Points - a.Points);
+
+            for (const badge of badges) {
+                const row = `
+                    <tr class="border-b">
+                        <td class="py-2 px-4">${badge.Name}</td>
+                        <td class="py-2 px-4">${badge.Description}</td>
+                        <td class="py-2 px-4">${badge.Category}</td>
+                        <td class="py-2 px-4">${badge.Points}</td>
+                        <td class="py-2 px-4">${badge.Acquired ? 'Acquired' : 'Not Acquired'}</td>
+                    </tr>
+                `;
+                tbody.insertAdjacentHTML('beforeend', row);
+            }
+        }
+
+        function updateDailyStreak(streak) {
+            const div = document.getElementById('daily-streak-info');
+            div.innerHTML = `
+                <p><strong>Streak:</strong> ${streak.dailyStreak} days</p>
+                <p><strong>Next Check-in Points:</strong> ${streak.nextCheckinPoints}</p>
+                <p><strong>Total Points:</strong> ${streak.points}</p>
+                <p><strong>Status:</strong> ${streak.acquired ? 'Active' : 'Inactive'}</p>
+                <p><strong>Cooldown:</strong> ${streak.cooldownActive ? 'Active' : 'Inactive'}</p>
+                <p><strong>Next Check-in:</strong> ${new Date(streak.cooldownTime).toLocaleString()}</p>
+            `;
+        }
+
+        // Function to initialize sorting on all tables
+        function initializeSort() {
+            const tables = document.querySelectorAll('table'); // Select all tables on the page
+
+            tables.forEach(table => {
+                const headers = table.querySelectorAll('th');
+                const tbody = table.querySelector('tbody');
+                const rows = tbody.querySelectorAll('tr');
+
+                headers.forEach((header, index) => {
+                    header.addEventListener('click', () => {
+                        const isAscending = header.classList.contains('asc');
+                        headers.forEach(h => h.classList.remove('asc', 'desc'));
+                        header.classList.toggle('asc', !isAscending);
+                        header.classList.toggle('desc', isAscending);
+
+                        const sortedRows = Array.from(rows).sort((a, b) => {
+                            const aValue = a.children[index].getAttribute('data-sort-value') || a.children[index].textContent;
+                            const bValue = b.children[index].getAttribute('data-sort-value') || b.children[index].textContent;
+
+                            // Convert values to numbers for sorting
+                            const aNum = parseFloat(aValue);
+                            const bNum = parseFloat(bValue);
+
+                            if (!isNaN(aNum) && !isNaN(bNum)) {
+                                return isAscending ? aNum - bNum : bNum - aNum;
+                            } else {
+                                return isAscending ? aValue.localeCompare(bValue) : bValue.localeCompare(aValue);
+                            }
+                        });
+
+                        tbody.innerHTML = '';
+                        sortedRows.forEach(row => tbody.appendChild(row));
+                    });
+                });
+            });
+        }
+
+        // Fetch data when the page loads
+        window.onload = () => {
+            document.getElementById('json-address').value = '0x9e47FBb2a2A27B3b02E4a63b3eF5A3dC863c0223';
+            fetchData();
+        };
+    </script>
+</body>
+</html>
