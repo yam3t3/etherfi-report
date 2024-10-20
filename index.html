@@ -15,7 +15,9 @@
         <!-- New Section for Input -->
         <section class="mb-6">
             <div class="flex justify-between items-center">
-                <h1 class="text-center text-3xl font-bold text-gray-800 border-b-4 border-blue-500 pb-2 mb-4">Ether.fi Portfolio Report</h1>
+                <h1 class="text-center text-3xl font-bold text-gray-800 border-b-4 border-blue-500 pb-2 mb-4">
+                    Ether.fi Portfolio Report <a href="https://debank.com/profile/0x9e47fbb2a2a27b3b02e4a63b3ef5a3dc863c0223" class="text-gray-600 text-sm">by Yamete</a>
+                </h1>
                 <input type="text" id="json-address" class="form-control w-1/2 p-2 border rounded" placeholder="Enter Address" value="0x9e47FBb2a2A27B3b02E4a63b3eF5A3dC863c0223" onkeypress="if(event.key === 'Enter') fetchData()">
             </div>
         </section>
@@ -140,8 +142,6 @@
             if (!isValidAddress(address)) {
                 document.getElementById('error-container').innerHTML = 'Invalid address format. Please enter a valid address.';
                 document.getElementById('error-container').classList.remove('hidden'); // Show error container
-                document.getElementById('error-container').classList.remove('bg-green-100'); // Remove success background
-                document.getElementById('error-container').classList.add('bg-red-100'); // Add error background
                 return;
             }
 
@@ -149,10 +149,8 @@
                 const response = await axios.get(url);
                 const data = response.data;
 
-                // Show success message
+                // Hide the error container if the fetch is successful
                 document.getElementById('error-container').classList.remove('hidden'); // Ensure it's visible
-                document.getElementById('error-container').classList.remove('bg-red-100'); // Remove error background
-                document.getElementById('error-container').classList.add('bg-green-100'); // Add success background
                 document.getElementById('error-container').classList.remove('text-red-600'); // Remove error text color
                 document.getElementById('error-container').classList.add('text-green-600'); // Add success text color
                 document.getElementById('error-container').innerHTML = 'Data fetched successfully!'; // Success message
@@ -165,8 +163,6 @@
                 console.error('Error fetching the data:', error); // Log the error
                 document.getElementById('error-container').innerHTML = `Error fetching data: ${error.message}. Please try again later.`;
                 document.getElementById('error-container').classList.remove('hidden'); // Show error container
-                document.getElementById('error-container').classList.remove('bg-green-100'); // Remove success background
-                document.getElementById('error-container').classList.add('bg-red-100'); // Add error background
                 document.getElementById('error-container').classList.add('text-red-600'); // Ensure error text color
                 document.getElementById('error-container').classList.remove('text-green-600'); // Remove success text color
             }
