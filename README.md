@@ -1,5 +1,7 @@
 # Etherfi Points Dashboard
 
+![image](https://github.com/user-attachments/assets/de266f10-e84b-4ab6-8654-f1570c5db520)
+
 ## Live Version
 You can view the live version of the dashboard [here](https://yam3t3.github.io/etherfi-report/).
 
