@@ -14,19 +14,19 @@
     <div class="container mx-auto my-10 p-8 bg-white shadow-lg rounded-lg">
         <!-- New Section for Input -->
         <section class="mb-6">
-            <div class="flex justify-between items-center">
-                <h1 class="text-center text-3xl font-bold text-gray-800 border-b-4 border-blue-500 pb-2 mb-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <h1 class="text-center text-3xl font-bold text-gray-800 border-b-4 border-blue-500 pb-2 mb-4 w-full md:w-auto">
                     Ether.fi Portfolio Report <a href="https://debank.com/profile/0x9e47fbb2a2a27b3b02e4a63b3ef5a3dc863c0223" class="text-gray-600 text-sm">by Yamete</a>
                 </h1>
-                <input type="text" id="json-address" class="form-control w-1/2 p-2 border rounded" placeholder="Enter Address" value="0x9e47FBb2a2A27B3b02E4a63b3eF5A3dC863c0223" onkeypress="if(event.key === 'Enter') fetchData()">
+                <input type="text" id="json-address" class="form-control w-full md:w-1/2 p-2 border rounded mt-4 md:mt-0" placeholder="Enter Address" value="0x9e47FBb2a2A27B3b02E4a63b3eF5A3dC863c0223" onkeypress="if(event.key === 'Enter') fetchData()">
             </div>
         </section>
 
         <div id="error-container" class="text-red-600 font-bold mt-6 p-4 bg-red-100 rounded hidden"></div>
 
         <!-- Report Sections -->
-        <section class="grid grid-cols-3 gap-4">
-            <section id="total-points-summary" class="col-span-2">
+        <section class="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <section id="total-points-summary" class="col-span-1 md:col-span-2 w-full">
                 <h2 class="text-2xl font-bold text-gray-800 mt-10 mb-6">Total Points Summary</h2>
                 <div class="overflow-x-auto">
                     <table class="min-w-full bg-white shadow-md rounded-lg">
@@ -45,7 +45,7 @@
                 </div>
             </section>
 
-            <section id="daily-streak" class="col-span-1">
+            <section id="daily-streak" class="col-span-1 w-full">
                 <h2 class="text-2xl font-bold text-gray-800 mt-10 mb-6">Daily Streak</h2>
                 <div id="daily-streak-info" class="bg-gray-200 p-6 rounded-lg shadow-md">
                     <!-- Data will be inserted here -->
