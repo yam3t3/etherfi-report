@@ -126,11 +126,10 @@
             }
         }
 
-        // Function to format effective balance
-        function formatEffectiveBalance(num) {
-            if (num === undefined || num === null) return '-';
-            num = typeof num === 'string' ? parseFloat(num) : num;
-            return (num / 1e6).toFixed(4); // Divide by 1,000,000 and format to 4 decimal places
+        // Function to format the effective balance from wei to ETH
+        function formatEffectiveBalance(balanceInWei) {
+            const balanceInEth = balanceInWei / 1e18; // Convert wei to ETH
+            return balanceInEth.toFixed(6); // Format to 6 decimal places
         }
 
         // Function to fetch data from the API and update the tables
