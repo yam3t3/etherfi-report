@@ -141,6 +141,10 @@
             if (!isValidAddress(address)) {
                 document.getElementById('error-container').innerHTML = 'Invalid address format. Please enter a valid address.';
                 document.getElementById('error-container').classList.remove('hidden'); // Show error container
+                document.getElementById('error-container').classList.remove('text-green-600'); // Remove success text color
+                document.getElementById('error-container').classList.add('text-red-600'); // Add error text color
+                document.getElementById('error-container').classList.remove('bg-green-100'); // Remove success background color
+                document.getElementById('error-container').classList.add('bg-red-100'); // Add error background color
                 return;
             }
 
@@ -152,6 +156,8 @@
                 document.getElementById('error-container').classList.remove('hidden'); // Ensure it's visible
                 document.getElementById('error-container').classList.remove('text-red-600'); // Remove error text color
                 document.getElementById('error-container').classList.add('text-green-600'); // Add success text color
+                document.getElementById('error-container').classList.remove('bg-red-100'); // Remove error background color
+                document.getElementById('error-container').classList.add('bg-green-100'); // Add success background color
                 document.getElementById('error-container').innerHTML = 'Data fetched successfully!'; // Success message
 
                 updateTotalPointsSummary(data.totalPointsSummaries);
@@ -164,6 +170,8 @@
                 document.getElementById('error-container').classList.remove('hidden'); // Show error container
                 document.getElementById('error-container').classList.add('text-red-600'); // Ensure error text color
                 document.getElementById('error-container').classList.remove('text-green-600'); // Remove success text color
+                document.getElementById('error-container').classList.remove('bg-green-100'); // Remove success background color
+                document.getElementById('error-container').classList.add('bg-red-100'); // Add error background color
             }
         }
 
